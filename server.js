@@ -1,7 +1,7 @@
 const http = require('http');
 var dt = require('./firstmodule');
 
-const port = 3001;
+const port = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -11,5 +11,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  console.log('Server running on port: ${port}');
+  console.log('Server running on port: $(port)');
 });
